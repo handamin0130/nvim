@@ -15,7 +15,7 @@ mv ~/.cache/nvim{,.bak}
 ## Clone the starter
 
 ```bash
-git clone https://github.com/handamin0130/handamin0130.nvim ~/.config/nvim
+git clone https://github.com/handamin0130/nvim ~/.config/nvim
 ```
 
 ## Remove the .git folder, so you can add it to your own repo later
