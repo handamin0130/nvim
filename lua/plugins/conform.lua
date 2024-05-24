@@ -14,7 +14,7 @@ return {
 
 				c = { "ast-grep" },
 				cpp = { "ast-grep" },
-				rust = { "ast-grep" },
+				rust = { "rust-analyzer" },
 			},
 			format_on_save = {
 				timeout_ms = 500,

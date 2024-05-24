@@ -10,6 +10,7 @@ return {
 
 			map_key("<leader>ff", builtin.find_files)
 			map_key("<leader>fg", builtin.live_grep)
+			map_key("<leader>fr", builtin.oldfiles)
 			map_key("<leader>fb", builtin.buffers)
 			map_key("<leader>fh", builtin.help_tags)
 		end,
