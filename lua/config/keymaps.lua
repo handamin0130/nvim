@@ -15,3 +15,6 @@ map_key("<leader>h", ":nohlsearch<CR>")
 -- indent
 map_key("<", "<gv", "v")
 map_key(">", ">gv", "v")
+
+-- save
+map_key("<leader>s", ":w")
