@@ -18,3 +18,8 @@ map_key(">", ">gv", "v")
 
 -- save
 map_key("<leader>s", ":w<CR>")
+
+-- delete
+map_key("<leader>d", '"_d', "n") -- Normal mode
+map_key("<leader>d", '"_d', "x") -- Visual mode
+map_key("<leader>p", '"_dP', "x") -- Visual mode
