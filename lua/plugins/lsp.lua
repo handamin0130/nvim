@@ -36,11 +36,21 @@ return {
 		"neovim/nvim-lspconfig",
 		config = function()
 			local lspconfig = require("lspconfig")
+			local util = require("lspconfig/util")
 
 			lspconfig.lua_ls.setup({})
 
 			lspconfig.clangd.setup({})
-			lspconfig.rust_analyzer.setup({})
+			lspconfig.rust_analyzer.setup({
+				root_dir = util.root_pattern("Cargo.toml"),
+				settings = {
+					["rust-analyzer"] = {
+						cargo = {
+							allFeatures = true,
+						},
+					},
+				},
+			})
 
 			lspconfig.wgsl_analyzer.setup({})
 
