@@ -14,7 +14,8 @@ return {
 				ensure_installed = {
 					"lua_ls", -- lua
 
-					"vtsls", -- js, ts
+					"tsserver",
+					"html", -- js, ts
 
 					"clangd", -- c, c++
 					"rust_analyzer", -- rust
@@ -40,6 +41,9 @@ return {
 
 			lspconfig.lua_ls.setup({})
 
+			lspconfig.tsserver.setup({})
+			lspconfig.html.setup({})
+
 			lspconfig.clangd.setup({})
 			lspconfig.rust_analyzer.setup({
 				root_dir = util.root_pattern("Cargo.toml"),
@@ -57,9 +61,6 @@ return {
 			lspconfig.yamlls.setup({})
 			lspconfig.jsonls.setup({})
 
-			-- vim.lsp.buf.hover
-			-- vim.lsp.buf.definition
-			-- vim.lsp.buf.code_action
 			map_key("K", vim.lsp.buf.hover)
 			map_key("gd", vim.lsp.buf.definition)
 			map_key("<leader>ca", vim.lsp.buf.code_action)

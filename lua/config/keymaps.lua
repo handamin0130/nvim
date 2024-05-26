@@ -23,3 +23,7 @@ map_key("<leader>s", ":w<CR>")
 map_key("<leader>d", '"_d', "n") -- Normal mode
 map_key("<leader>d", '"_d', "x") -- Visual mode
 map_key("<leader>p", '"_dP', "x") -- Visual mode
+
+-- exit
+map_key("<leader>q", ":wq<CR>") -- current view exit
+map_key("<leader>x", ":wqa<CR>") -- nvim exit
