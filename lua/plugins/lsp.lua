@@ -17,6 +17,10 @@ return {
 					"tsserver",
 					"html", -- js, ts
 
+					"cssls", --css
+					"somesass_ls", --sass
+					"tailwindcss", --tailwindcss
+
 					"clangd", -- c, c++
 					"rust_analyzer", -- rust
 
@@ -48,7 +52,11 @@ return {
 			lspconfig.rust_analyzer.setup({
 				root_dir = util.root_pattern("Cargo.toml"),
 				settings = {
-					["rust-analyzer"] = {},
+					["rust-analyzer"] = {
+						-- cargo = {
+						-- 	allFeatures = true,
+						-- },
+					},
 				},
 			})
 
@@ -63,6 +71,7 @@ return {
 
 			map_key("K", vim.lsp.buf.hover)
 			map_key("gd", vim.lsp.buf.definition)
+			map_key("<leader>cc", vim.diagnostic.open_float)
 			map_key("<leader>ca", vim.lsp.buf.code_action)
 		end,
 	},

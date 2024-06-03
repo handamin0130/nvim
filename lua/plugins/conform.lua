@@ -12,6 +12,10 @@ return {
 				typescript = { { "prettierd", "prettier" } },
 				javascriptreact = { { "prettierd", "prettier" } },
 				typescriptreact = { { "prettierd", "prettier" } },
+				css = { { "prettierd", "prettier" } },
+				sass = { { "prettierd", "prettier" } },
+				scss = { { "prettierd", "prettier" } },
+				html = { { "prettierd", "prettier" } },
 
 				c = { "ast-grep" },
 				cpp = { "ast-grep" },

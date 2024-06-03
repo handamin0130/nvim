@@ -19,6 +19,11 @@ return {
 				"wgsl",
 				"wgsl_bevy",
 
+				"javascript",
+				"typescript",
+				"css",
+				"scss",
+
 				"ini",
 				"markdown",
 				"markdown_inline",
