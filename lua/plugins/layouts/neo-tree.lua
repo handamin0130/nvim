@@ -1,3 +1,5 @@
+local map_key = require("utils.key_mapper").map_key
+
 return {
 	"nvim-neo-tree/neo-tree.nvim",
 	branch = "v3.x",
@@ -27,5 +29,7 @@ return {
 		})
 
 		vim.cmd([[nnoremap \ :Neotree reveal<cr>]])
+
+		map_key("<leader>e", ":Neotree toggle<cr>")
 	end,
 }
