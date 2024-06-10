@@ -23,10 +23,19 @@ return {
 		config = function()
 			require("mason-lspconfig").setup({
 				ensure_installed = {
+                    -- c, c++
+                    "clangd",
+
 					-- rust
 					"rust_analyzer",
 
+                    -- web
+                    "html", "htmx", -- html, htmx
+                    "tsserver", -- js, ts
+
 					-- docs
+                    "jsonls", --json
+                    "taplo", -- toml
 				},
 			})
 		end,
