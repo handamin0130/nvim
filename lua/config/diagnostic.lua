@@ -7,9 +7,9 @@ diagnostic.config({
     underline = true,
     severity_sort = false,
     float = {
-        border = 'rounded',
-        source = 'always',
-        header = '',
-        prefix = '',
+        border = "rounded",
+        source = "always",
+        header = "",
+        prefix = "",
     },
 })

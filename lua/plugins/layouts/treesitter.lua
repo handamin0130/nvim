@@ -20,9 +20,21 @@ return {
         highlight = { enable = true },
         indent = { enable = true },
         ensure_installed = {
+            "bash",
+            
+            -- c, c++
+            "c",
+            "cpp",
+
             -- rust
             "rust",
             "ron",
+
+            -- web
+            "css", "scss",
+            "html",
+            "javascript",
+            "typescript",
 
             -- doc
             "json",
@@ -32,6 +44,10 @@ return {
             "markdown_inline",
 
             -- git
+            "git_config",
+            "git_rebase",
+            "gitattributes",
+            "gitcommit",
             "gitignore",
         },
         incremental_selection = {

@@ -29,9 +29,15 @@ return {
 					-- rust
 					"rust_analyzer",
 
+                    -- python
+                    "pylsp",
+
                     -- web
                     "html", "htmx", -- html, htmx
                     "tsserver", -- js, ts
+                    "cssls", -- css
+                    "somesass_ls", -- sass
+                    "tailwindcss", -- tailwind css
 
 					-- docs
                     "jsonls", --json

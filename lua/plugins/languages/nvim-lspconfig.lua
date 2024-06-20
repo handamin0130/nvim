@@ -24,10 +24,16 @@ return {
             },
         })
 
+        -- python
+        lspconfig.pylsp.setup({})
+
         -- web
         lspconfig.html.setup({})
         lspconfig.htmx.setup({})
         lspconfig.tsserver.setup({})
+        lspconfig.cssls.setup({})
+        lspconfig.somesass_ls.setup({})
+        lspconfig.tailwindcss.setup({})
 
         -- docs
         lspconfig.jsonls.setup({})

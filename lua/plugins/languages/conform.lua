@@ -13,7 +13,6 @@ return {
 				-- rust
 				rust = { "rust-analyzer" },
 
-
                 -- web
                 javascript = { { "prettierd", "prettier" } },
                 typescript = { { "prettierd", "prettier" } },
