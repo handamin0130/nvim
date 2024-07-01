@@ -35,9 +35,10 @@ return {
             "html",
             "javascript",
             "typescript",
+            "tsx",
 
             -- doc
-            "json",
+            "json", "json5",
             "toml",
 
             "markdown",

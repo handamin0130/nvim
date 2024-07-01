@@ -4,7 +4,12 @@ return {
 	{
 		"akinsho/toggleterm.nvim",
 		config = function()
-			require("toggleterm").setup({})
+			require("toggleterm").setup({
+                direction = "float",
+                float_opts = {
+                    border = "double",
+                },
+            })
 
 			map_key("<leader>t", ":ToggleTerm<CR>")
 		end,

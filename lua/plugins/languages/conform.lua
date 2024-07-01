@@ -26,5 +26,5 @@ return {
 				lsp_fallback = true,
 			},
 		})
-	end,
+    end
 }
